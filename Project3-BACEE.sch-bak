@@ -101,12 +101,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 2650 3750 50 
 	1    2650 3750
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 4450 6125 2375 1525
-U 61A1FED7
-F0 "Connectors" 50
-F1 "Connectors.sch" 50
-$EndSheet
 $Comp
 L dk_Embedded-Microcontrollers:ATMEGA328P-AU U4
 U 1 1 61A26237
@@ -182,4 +176,91 @@ F 3 "" H 9925 4400 50  0001 C CNN
 	1    9925 4400
 	1    0    0    -1  
 $EndComp
+Text Label 7100 3025 2    50   ~ 0
+MISO
+Text Label 7100 2925 2    50   ~ 0
+MOSI
+Text Label 7100 3125 2    50   ~ 0
+SCK
+Text Label 7100 3825 2    50   ~ 0
+RESET
+Text Label 7700 1425 2    50   ~ 0
+VCC
+Wire Wire Line
+	7600 1625 7600 1525
+Wire Wire Line
+	7600 1525 7700 1525
+Wire Wire Line
+	7800 1525 7800 1625
+Wire Wire Line
+	7700 1525 7700 1625
+Connection ~ 7700 1525
+Wire Wire Line
+	7700 1525 7800 1525
+Wire Wire Line
+	7700 1525 7700 1425
+Text Label 7700 4925 2    50   ~ 0
+GND
+Wire Wire Line
+	7600 4725 7600 4800
+Wire Wire Line
+	7600 4800 7700 4800
+Wire Wire Line
+	7800 4800 7800 4725
+Wire Wire Line
+	7700 4725 7700 4800
+Connection ~ 7700 4800
+Wire Wire Line
+	7700 4800 7800 4800
+Wire Wire Line
+	7700 4925 7700 4800
+Wire Wire Line
+	3750 6875 3750 6775
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 61A988D5
+P 3750 6875
+F 0 "#PWR?" H 3750 6675 50  0001 C CNN
+F 1 "GNDPWR" H 3754 6721 50  0000 C CNN
+F 2 "" H 3750 6825 50  0001 C CNN
+F 3 "" H 3750 6825 50  0001 C CNN
+	1    3750 6875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 6775 4050 6775
+Wire Wire Line
+	3750 5650 4050 5650
+Wire Wire Line
+	3750 6650 4050 6650
+Wire Wire Line
+	3750 6100 4050 6100
+Wire Wire Line
+	3775 5925 4050 5925
+Text Label 3750 6775 2    50   ~ 0
+GND
+Text Label 3750 5650 2    50   ~ 0
+MOSI
+Text Label 3750 6650 2    50   ~ 0
+VCC
+Text Label 3750 6100 2    50   ~ 0
+RESET
+Text Label 3775 5925 2    50   ~ 0
+SCK
+$Sheet
+S 4050 5450 2375 1525
+U 61A1FED7
+F0 "Connectors" 50
+F1 "Connectors.sch" 50
+F2 "MISO" O L 4050 5550 50 
+F3 "SCK" B L 4050 5925 50 
+F4 "RESET" O L 4050 6100 50 
+F5 "VCC" I L 4050 6650 50 
+F6 "MOSI" I L 4050 5650 50 
+F7 "GND" I L 4050 6775 50 
+$EndSheet
+Wire Wire Line
+	3800 5550 4050 5550
+Text Label 3800 5550 2    50   ~ 0
+MISO
 $EndSCHEMATC

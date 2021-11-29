@@ -101,12 +101,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 2650 3750 50 
 	1    2650 3750
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 4450 6125 2375 1525
-U 61A1FED7
-F0 "Connectors" 50
-F1 "Connectors.sch" 50
-$EndSheet
 $Comp
 L dk_Embedded-Microcontrollers:ATMEGA328P-AU U4
 U 1 1 61A26237
@@ -182,4 +176,161 @@ F 3 "" H 9925 4400 50  0001 C CNN
 	1    9925 4400
 	1    0    0    -1  
 $EndComp
+Text Label 7100 3025 2    50   ~ 0
+MISO
+Text Label 7100 2925 2    50   ~ 0
+MOSI
+Text Label 7100 3125 2    50   ~ 0
+SCK
+Text Label 7100 3825 2    50   ~ 0
+RESET
+Text Label 7700 1425 2    50   ~ 0
+VCC
+Wire Wire Line
+	7600 1625 7600 1525
+Wire Wire Line
+	7600 1525 7700 1525
+Wire Wire Line
+	7800 1525 7800 1625
+Wire Wire Line
+	7700 1525 7700 1625
+Connection ~ 7700 1525
+Wire Wire Line
+	7700 1525 7800 1525
+Wire Wire Line
+	7700 1525 7700 1425
+Text Label 7700 4925 2    50   ~ 0
+GND
+Wire Wire Line
+	7600 4725 7600 4800
+Wire Wire Line
+	7600 4800 7700 4800
+Wire Wire Line
+	7800 4800 7800 4725
+Wire Wire Line
+	7700 4725 7700 4800
+Connection ~ 7700 4800
+Wire Wire Line
+	7700 4800 7800 4800
+Wire Wire Line
+	7700 4925 7700 4800
+Wire Wire Line
+	3025 6850 3025 6750
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 61A988D5
+P 3025 6850
+F 0 "#PWR?" H 3025 6650 50  0001 C CNN
+F 1 "GNDPWR" H 3029 6696 50  0000 C CNN
+F 2 "" H 3025 6800 50  0001 C CNN
+F 3 "" H 3025 6800 50  0001 C CNN
+	1    3025 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3025 6750 3325 6750
+Wire Wire Line
+	3025 5625 3325 5625
+Wire Wire Line
+	3025 6625 3325 6625
+Wire Wire Line
+	3025 6075 3325 6075
+Wire Wire Line
+	3050 5900 3325 5900
+Text Label 3025 6750 2    50   ~ 0
+GND
+Text Label 3025 5625 2    50   ~ 0
+MOSI
+Text Label 3025 6625 2    50   ~ 0
+VCC
+Text Label 3025 6075 2    50   ~ 0
+RESET
+Text Label 3050 5900 2    50   ~ 0
+SCK
+Wire Wire Line
+	3075 5525 3325 5525
+Text Label 3075 5525 2    50   ~ 0
+MISO
+$Sheet
+S 3325 5425 2375 1525
+U 61A1FED7
+F0 "Connectors" 50
+F1 "Connectors.sch" 50
+F2 "MISO" O L 3325 5525 50 
+F3 "SCK" B L 3325 5900 50 
+F4 "RESET" O L 3325 6075 50 
+F5 "VCC" I L 3325 6625 50 
+F6 "MOSI" I L 3325 5625 50 
+F7 "GND" I L 3325 6750 50 
+F8 "RX" I L 3325 6275 50 
+F9 "TX" O L 3325 6400 50 
+F10 "SDA" I R 5700 5900 50 
+F11 "D2" B R 5700 6150 50 
+F12 "D3" B R 5700 6300 50 
+F13 "D4" B R 5700 6450 50 
+F14 "D5" B R 5700 6550 50 
+F15 "D6" B R 5700 6675 50 
+F16 "D7" B R 5700 6775 50 
+F17 "D8" B R 5700 6850 50 
+$EndSheet
+Text Label 6025 5900 0    50   ~ 0
+SDA
+Text Label 6025 6150 0    50   ~ 0
+D2
+Text Label 6025 6300 0    50   ~ 0
+D3
+Text Label 6025 6450 0    50   ~ 0
+D4
+Text Label 6025 6550 0    50   ~ 0
+D5
+Text Label 6025 6675 0    50   ~ 0
+D6
+Text Label 6025 6775 0    50   ~ 0
+D7
+Text Label 6025 6850 0    50   ~ 0
+D8
+Text Label 3025 6275 0    50   ~ 0
+RX
+Text Label 3025 6400 0    50   ~ 0
+TX
+Wire Wire Line
+	6025 5900 5700 5900
+Wire Wire Line
+	5700 6150 6025 6150
+Wire Wire Line
+	5700 6300 6025 6300
+Wire Wire Line
+	5700 6450 6025 6450
+Wire Wire Line
+	5700 6550 6025 6550
+Wire Wire Line
+	5700 6675 6025 6675
+Wire Wire Line
+	5700 6775 6025 6775
+Wire Wire Line
+	5700 6850 6025 6850
+Wire Wire Line
+	3325 6400 3025 6400
+Wire Wire Line
+	3025 6275 3325 6275
+Text Label 7100 1925 2    50   ~ 0
+D3
+Text Label 7100 2025 2    50   ~ 0
+D4
+Text Label 7100 2325 2    50   ~ 0
+D5
+Text Label 7100 2425 2    50   ~ 0
+D6
+Text Label 7100 2525 2    50   ~ 0
+D7
+Text Label 7100 2625 2    50   ~ 0
+D8
+Text Label 7100 3625 2    50   ~ 0
+SDA
+Text Label 7100 3925 2    50   ~ 0
+RX
+Text Label 7100 4025 2    50   ~ 0
+TX
+Text Label 7100 4125 2    50   ~ 0
+D2
 $EndSCHEMATC
